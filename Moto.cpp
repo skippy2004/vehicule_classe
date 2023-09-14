@@ -1,3 +1,4 @@
+
 #include "Moto.h"
 
 using namespace std;
@@ -13,12 +14,12 @@ Moto::~Moto() {
 }
 
 
-std::string Moto::getPoids() {
-    return this->Poids;
+int Moto::getPoids() {
+    return this->poids;
 }
 
-void Moto::setPoids(std::string poids) {
-    this->Poids = 186;
+void Moto::setPoids(int poids) {
+    this->poids = 186;
 }
 
 
