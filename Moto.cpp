@@ -13,11 +13,11 @@ Moto::~Moto() {
 }
 
 
-std::string Moto::getPOids() {
+std::string Moto::getPoids() {
     return this->Poids;
 }
 
-void Moto::setPoids(int poids) {
+void Moto::setPoids(std::string poids) {
     this->Poids = 186;
 }
 
@@ -25,6 +25,6 @@ void Moto::setPoids(int poids) {
 std::string Moto::getMoteur(){
     return this->Moteur;
 }
-void Moto::setMoteur(Moteur *moteur) {
+void Moto::setMoteur(std::string Moteur) {
     this->Moteur = *moteur;
 }
