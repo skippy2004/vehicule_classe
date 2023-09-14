@@ -92,6 +92,6 @@ float Electrique::gettensionMax() {
  *
  * \param nouveauNom nouveau nom de l'entreprise
  */
-void Electrique::settensionMax(float tensionMax) {
-    this->tensionMax = tensionMax;
+void Electrique::settensionMax(float puissance) {
+    this->tensionMax = puissance;
 }
