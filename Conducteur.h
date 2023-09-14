@@ -1,4 +1,3 @@
-/*****************************************************************/
 #ifndef conducteur_H
 #define conducteur_H
 #include <iostream>
@@ -11,7 +10,8 @@ class conducteur
 private:
     std::string nomconducteur;
     std::string villeconducteur;
-
+    int anneeNaissance;
+    //Moto mesMotos[10];
 
 
 protected:
@@ -19,17 +19,26 @@ protected:
 
 
 public:
-    /*Classe sous forme canonique*/
     conducteur();
     ~conducteur();
-    conducteur(const conducteur& entre);
-    conducteur& operator = (const conducteur& entre);
+
 
     conducteur(std::string nom, std::string ville);
-    std::string getNomconducteur();
-    void setconducteur(std::string nouveauNom);
-    std::string getVilleconducteur();
-    void setVilleconducteur(std::string nouvelleVille);
+  
+    std::string getNom();
+    void setNom(std::string nouveauNom);
+    
+    std::string getPrenom();
+    void setPrenom(std::string nouveauPrenom);
+
+    std::string getAnneeNaissance();
+    void setAnneeNaissance(std::string nouvelleAnneeNaissance);
+
+    void afficheMotos();
+
+    //void addMoto(Moto* newMoto);
+
+    //void rmMotto(Moto* rmMoto);
 
 };
 
