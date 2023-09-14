@@ -1,30 +1,25 @@
-/*****************************************************************/
-#pragma once
-
-#include "Moto.h"
+#indef MOTO_H
+#define MOTO_H
 #include <iostream>
 #include <string>
+class Moteur
 
 class Moto
 {
 private:
 
-    int poids;
-    Moteur *moteur;
-
-
-
+    std::string poids;
+    std::string Moteur;
 
 protected:
 
 
 
 public:
-    /*Classe sous forme canonique*/
 
-    void setPoids(int poids);
-    int getPoids();
+    void setPoids(std::string poids);
+    std::string getPoids();
 
-    void setMoteur(Moteur* moteur);
-    Moteur *getMoteure();
+    void setMoteur(std::string Moteur);
+    std::string getMoteur();
 };
