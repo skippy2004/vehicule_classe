@@ -9,7 +9,7 @@
  * Programme Cpp permettant de creer des objets pour décrire les stages
  *********************************************************************/
 
-#include "Electrique.h"
+#include "Thermique.h"
 
 
 
@@ -23,8 +23,8 @@ using namespace std;
  * \li Ville = inconnu
  *
  */
-Electrique::Electrique() {
-    this->tensionMax = 0;
+Thermique::Thermique() {
+    this->cylindre = 0;
 }
 
 /**
@@ -33,8 +33,8 @@ Electrique::Electrique() {
  * \param nom nom de l'entreprise
  * \param ville ville de l'entreprise
  */
-Electrique::Electrique(float tensionMax) {
-    this->tensionMax = tensionMax;
+Thermique::Thermique(float cylindre) {
+    this->cylindre = cylindre;
 }
 
 
@@ -42,7 +42,7 @@ Electrique::Electrique(float tensionMax) {
  * \brief Destructeur
  *
  */
-Electrique::~Electrique() {
+Thermique::~Thermique() {
 
     cout << "Destrcution de l'entreprise " << endl;
 
@@ -54,10 +54,10 @@ Electrique::~Electrique() {
  *
  * \param entre Objet de type entreprise
  */
-Electrique::Electrique(const Electrique& entre)
+Thermique::Thermique(const Thermique& entre)
 {
     cout << "Copie de Capitaine" << endl;
-    this->tensionMax = entre.tensionMax;
+    this->cylindre = entre.cylindre;
 }
 
 /**
@@ -66,12 +66,12 @@ Electrique::Electrique(const Electrique& entre)
  * \param entre Objet de type entreprise
  * \return Nouvelle objet de type entreprise
  */
-Electrique& Electrique::operator = (const Electrique& entre)
+Thermique& Thermique::operator = (const Thermique& entre)
 {
     cout << "Affectation de l'entreprise" << std::endl;
     if (this != &entre)  // Pour éviter que l'on ne se recopie pas...
     {
-        this->tensionMax = entre.tensionMax;
+        this->cylindre = entre.cylindre;
     }
     return *this;
 }
@@ -83,8 +83,8 @@ Electrique& Electrique::operator = (const Electrique& entre)
  *
  * \return Nom de l'entreprise
  */
-float Electrique::gettensionMax() {
-    return this->tensionMax;
+float Thermique::getcylindre() {
+    return this->cylindre;
 }
 
 /**
@@ -92,6 +92,6 @@ float Electrique::gettensionMax() {
  *
  * \param nouveauNom nouveau nom de l'entreprise
  */
-void Electrique::settensionMax(float tensionMax) {
-    this->tensionMax = tensionMax;
+void Thermique::setcylindre(float cylindre) {
+    this->cylindre = cylindre;
 }

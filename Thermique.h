@@ -6,8 +6,8 @@
  * \date   June 2023
  *********************************************************************/
 
-#ifndef ELECTRIQUE_H
-#define ELECTRIQUE_H
+#ifndef THERMIQUE_H
+#define THERMIQUE_H
 
 #include <iostream>
 #include <string>
@@ -25,14 +25,14 @@ using namespace std;
    * \li : commentaire avec Doxygen
    * \li : git, github
    */
-class Electrique : public Moteur
+class Thermique : public Moteur
 {
 
 private:
     /**
      * Membre prive puissance : puissance du moteur
      */
-    float tensionMax;
+    float cylindre;
 
 
 protected:
@@ -40,16 +40,16 @@ protected:
 
 
 public:
-    Electrique();
-    ~Electrique();
+    Thermique();
+    ~Thermique();
 
-    Electrique(const Electrique& entre);
-    Electrique& operator = (const Electrique& entre);
+    Thermique(const Thermique& entre);
+    Thermique& operator = (const Thermique& entre);
 
-    Electrique(float tensionMax);
+    Thermique(float cylindre);
 
-    float gettensionMax();
-    void settensionMax(float tensionMax);
+    float getcylindre();
+    void setcylindre(float cylindre);
 
 
 
