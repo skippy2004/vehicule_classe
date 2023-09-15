@@ -1,4 +1,3 @@
-
 #include "Moto.h"
 
 using namespace std;
