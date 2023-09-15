@@ -1,4 +1,9 @@
-
+/*****************************************************************//**
+ * \file  Moteur.cpp
+ * \brief  Definition de la classe Moteur
+ *
+ * \author youwan
+ *********************************************************************/
 
 #include "Moteur.h"
 
@@ -7,12 +12,19 @@
 using namespace std;
 
 
-
+/**
+ * \constructeur de base
+ *
+ */
 Moteur::Moteur() {
     this->puissance = 0;
 }
 
 
+/**
+ * \constructeur personnalisable
+ *
+ */
 Moteur::Moteur(int puissance) {
     this->puissance = puissance;
 }
@@ -32,7 +44,7 @@ Moteur::~Moteur() {
 /**
  * \brief Constructeur de copie
  *
- * \param entre Objet de type entreprise
+ * \param entre Objet de type Moteur
  */
 Moteur::Moteur(const Moteur& entre)
 {
@@ -43,7 +55,7 @@ Moteur::Moteur(const Moteur& entre)
 /**
  * \brief Operateur d'affectation
  *
- * \param entre Objet de type entreprise
+ * \param entre Objet de type Moteur
  * \return Nouvelle objet de type moteur
  */
 Moteur& Moteur::operator = (const Moteur& entre)
@@ -58,12 +70,18 @@ Moteur& Moteur::operator = (const Moteur& entre)
 
 
 
-
+/**
+ * \recuperer la puissance
+ *
+ */
 int Moteur::getpuissance(){
     return this->puissance;
 }
 
-
+/**
+ * \changer la puissance
+ *
+ */
 void Moteur::setpuissance(int puissance) {
     this->puissance = puissance;
 }

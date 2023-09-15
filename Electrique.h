@@ -1,4 +1,9 @@
-
+/*****************************************************************//**
+ * \file   Electrique.h
+ * \brief  Declaration de la classe Electrique
+ *
+ * \author youwan
+ *********************************************************************/
 
 #ifndef ELECTRIQUE_H
 #define ELECTRIQUE_H
@@ -8,15 +13,26 @@
 #include "Moteur.h"
 
 
+
 using namespace std;
 
 
-
+/*! \class Entreprise
+    * \brief classe representant une entreprise. 2 attributs prives
+    *
+    * Cette classe a une finalite pedagogique :
+    * \li : Rappel du C++
+    * \li : commentaire avec Doxygen
+    * \li : git, github
+    */
 class Electrique : public Moteur
 {
 
 private:
   
+    /**
+   * Membre prive tensionMax : contient la tensionMax
+   */
     float tensionMax;
 
 
