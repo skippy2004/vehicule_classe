@@ -2,6 +2,8 @@
 #define MOTO_H
 #include <iostream>
 #include <string>
+using namespace std;
+
 class Moteur;
 
 class Moto
@@ -9,7 +11,7 @@ class Moto
 private:
 
     int poids;
-    std::string Moteur;
+    Moteur *moteur;
 
 protected:
 
@@ -21,5 +23,6 @@ public:
     int getPoids();
 
     void setMoteur(Moteur *moteur);
-    std::string getMoteur();
+    Moteur* getMoteur();
 };
+#endif
