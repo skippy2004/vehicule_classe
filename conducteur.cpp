@@ -3,110 +3,59 @@
  * \brief  Definition de la classe conducteur
  *
  * \author Axel
- * \version 0.1
  * \date   septembre 2023
  *
  *********************************************************************/
 
-#include "entreprise.h"
-
+#include "conducteur.h"
 
 using namespace std;
 
 
-/**
- * \brief Constructeur par default
- */
-Entreprise::Entreprise() {
+//Constructeur par Défaut
+conducteur::conducteur() {
 
-    this->nomEntreprise = "nom inconnu";
-    this->villeEntreprise = "inconnu";
+    this->Nom = "Nom inconnu";
+    this->Prenom = "inconnu";
 
 }
 
-/**
- * \brief Constructeur avec parametres rentres en argument
- */
-Entreprise::Entreprise(std::string nom, std::string ville) {
-    this->nomEntreprise = nom;
-    this->villeEntreprise = ville;
+//Constructeur sur mesure
+conducteur::conducteur(std::string Nom, std::string Prenom, int anneeNaissance) {
+    this->Nom = Nom;
+    this->Prenom = Prenom;
+    this->anneeNaissance = anneeNaissance;
 }
 
 
-/**
- * \brief Destructeur
- */
-Entreprise::~Entreprise() {
+//Destructeur de Conducteur
+conducteur::~conducteur() {
 
-    cout << "Destrcution de l'entreprise " << this->nomEntreprise << " " << this->villeEntreprise << endl;
+    cout << "Destrcution de l'conducteur " << this->Nom << " " << this->Prenom << endl;
 
 }
 
-/**
- * \brief Constructeur de copie
- *
- * \param entre Objet de type entreprise
- */
-Entreprise::Entreprise(const Entreprise& entre)
+
+//------------------------------------------------------------------------------------------------
+
+/*
+std::string conducteur::getNom()
 {
-    cout << "Copie de Capitaine" << endl;
-    this->nomEntreprise = entre.nomEntreprise;
-    this->villeEntreprise = entre.villeEntreprise;
-
+    return this->Nom;
 }
-
-/**
- * \brief Operateur d'affectation
- *
- * \param entre Objet de type entreprise
- * \return Nouvelle objet de type entreprise
- */
-Entreprise& Entreprise::operator = (const Entreprise& entre)
-{
-    cout << "Affectation de l'entreprise" << std::endl;
-    if (this != &entre)  // Pour éviter que l'on ne se recopie pas...
-    {
-        this->nomEntreprise = entre.nomEntreprise;
-        this->villeEntreprise = entre.villeEntreprise;
-    }
-    return *this;
+void conducteur::setconducteur(std::string nouveauNom) {
+    this->Nom = nouveauNom;
 }
 
 
-/**
- * \brief Accesseur de l'attribut nomEntreprise
- *
- * \return Nom de l'entreprise
- */
-std::string Entreprise::getNomEntreprise()
-{
-    return this->nomEntreprise;
-}
 
-/**
- * \brief Mutateur de l'attribut nomEntreprise
- *
- * \param nouveauNom nouveau nom de l'entreprise
- */
-void Entreprise::setEntreprise(std::string nouveauNom) {
-    this->nomEntreprise = nouveauNom;
-}
-
-/**
- * \brief Accesseur de l'attribut villeEntreprise
- *
- * \return Nom de l'entreprise
- */
-std::string Entreprise::getVilleEntreprise() {
-    return this->villeEntreprise;
+std::string conducteur::getPrenomconducteur() {
+    return this->Prenomconducteur;
 }
 
 
-/**
- * \brief Mutateur de l'attribut villeEntreprise
- *
- * \param nouvelleVille nouvelle ville de l'entreprise
- */
-void  Entreprise::setVilleEntreprise(std::string nouvelleVille) {
-    this->villeEntreprise = nouvelleVille;
+
+void  conducteur::setPrenomconducteur(std::string nouvellePrenom) {
+    this->Prenomconducteur = nouvellePrenom;
 }
+*/

@@ -8,8 +8,8 @@ class conducteur
 {
 
 private:
-    std::string nomconducteur;
-    std::string villeconducteur;
+    std::string Nom;
+    std::string Prenom;
     int anneeNaissance;
     //Moto mesMotos[10];
 
@@ -23,16 +23,16 @@ public:
     ~conducteur();
 
 
-    conducteur(std::string nom, std::string ville);
+    conducteur(std::string Nom, std::string Prenom, int anneeNaissance);
   
     std::string getNom();
-    void setNom(std::string nouveauNom);
+    void setNom(std::string Nom);
     
     std::string getPrenom();
-    void setPrenom(std::string nouveauPrenom);
+    void setPrenom(std::string Prenom);
 
-    std::string getAnneeNaissance();
-    void setAnneeNaissance(std::string nouvelleAnneeNaissance);
+    int getAnneeNaissance();
+    void setAnneeNaissance(int AnneeNaissance);
 
     void afficheMotos();
 
