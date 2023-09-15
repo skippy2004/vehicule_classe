@@ -16,7 +16,8 @@ private:
 protected:
 
 public:
-
+    Moto();
+    ~Moto();
     void setPoids(int poids);
     int getPoids();
 

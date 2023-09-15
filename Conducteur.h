@@ -36,17 +36,17 @@ public:
     int getanneeNaissance();
     void setanneeNaissance(int anneeNaissance);
 
-    //void afficheMotos();
+    void afficheMotos();
 
 
-    /*
+    
     addMoto* getnewMoto();
     void setnewMoto(addMoto *newMoto);
 
 
     rmMotto* getrmMotto();
     void setrmMotto(Moto* rmMotto);
-    */
+    
 
 };
 

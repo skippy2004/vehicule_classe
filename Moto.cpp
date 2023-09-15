@@ -1,4 +1,6 @@
 #include "Moto.h"
+#include "Conducteur.h"
+#include "moteur.h"
 
 using namespace std;
 
