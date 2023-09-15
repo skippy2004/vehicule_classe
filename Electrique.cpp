@@ -1,13 +1,4 @@
-/*****************************************************************//**
- * \file   Entreprise.cpp
- * \brief  Definition de la classe Entreprise
- *
- * \author PierreV
- * \version 0.1
- * \date   June 2023
- *
- * Programme Cpp permettant de creer des objets pour décrire les stages
- *********************************************************************/
+
 
 #include "Electrique.h"
 
@@ -16,24 +7,13 @@
 using namespace std;
 class Moteur;
 
-/**
- * \brief Constructeur par default
- * \li Nom = anonyme
- * \li Nom = anonyme    #apres changement pour teste
- * \li Ville = inconnu
- *
- */
+
 Electrique::Electrique() :Moteur(50) {
     cout << "voiture Thermique prete" << endl;
     this->tensionMax = 5;
 }
 
-/**
- * \brief Constructeur avec parametres rentres en argument
- *
- * \param nom nom de l'entreprise
- * \param ville ville de l'entreprise
- */
+
 Electrique::Electrique(float tensionMax) :Moteur(50) {
     cout << "voiture electrique prete" << endl;
     this->tensionMax = tensionMax;
@@ -46,7 +26,7 @@ Electrique::Electrique(float tensionMax) :Moteur(50) {
  */
 Electrique::~Electrique() {
 
-    cout << "Destrcution de l'entreprise " << endl;
+    cout << "Destrcution de la voiture electrique " << endl;
 
 }
 
@@ -58,19 +38,14 @@ Electrique::~Electrique() {
  */
 Electrique::Electrique(const Electrique& entre)
 {
-    cout << "Copie de Capitaine" << endl;
+    cout << "Copie de la voiture electrique" << endl;
     this->tensionMax = entre.tensionMax;
 }
 
-/**
- * \brief Operateur d'affectation
- *
- * \param entre Objet de type entreprise
- * \return Nouvelle objet de type entreprise
- */
+
 Electrique& Electrique::operator = (const Electrique& entre)
 {
-    cout << "Affectation de l'entreprise" << std::endl;
+    cout << "Affectation de la voiture electrique" << std::endl;
     if (this != &entre)  // Pour éviter que l'on ne se recopie pas...
     {
         this->tensionMax = entre.tensionMax;

@@ -1,10 +1,4 @@
-/*****************************************************************//**
- * \file   mission.h
- * \brief  Declaration de la classe entreprise
- *
- * \author Pierre
- * \date   June 2023
- *********************************************************************/
+
 
 #ifndef MOTEUR_H
 #define MOTEUR_H
@@ -15,21 +9,12 @@
 using namespace std;
 
 
-/*! \class Entreprise
-   * \brief classe representant une entreprise. 2 attributs prives
-   *
-   * Cette classe a une finalite pedagogique :
-   * \li : Rappel du C++
-   * \li : commentaire avec Doxygen
-   * \li : git, github
-   */
+
 class Moteur
 {
 
 private:
-    /**
-     * Membre prive puissance : puissance du moteur
-     */
+ 
     int puissance;
     
    
@@ -38,7 +23,7 @@ protected:
 
 
 public:
-    /*Classe sous forme canonique*/
+
     Moteur();
     ~Moteur();
     Moteur(const Moteur& entre);
