@@ -23,8 +23,9 @@ using namespace std;
  * \li Ville = inconnu
  *
  */
-Electrique::Electrique() {
-    this->tensionMax = 0;
+Electrique::Electrique() :Moteur(50) {
+    cout << "voiture Thermique prete" << endl;
+    this->tensionMax = 5;
 }
 
 /**
@@ -33,7 +34,8 @@ Electrique::Electrique() {
  * \param nom nom de l'entreprise
  * \param ville ville de l'entreprise
  */
-Electrique::Electrique(float tensionMax) {
+Electrique::Electrique(float tensionMax) :Moteur(50) {
+    cout << "voiture electrique prete" << endl;
     this->tensionMax = tensionMax;
 }
 

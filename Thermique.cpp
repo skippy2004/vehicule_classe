@@ -23,9 +23,11 @@ using namespace std;
  * \li Ville = inconnu
  *
  */
-Thermique::Thermique() {
-    this->cylindre = 0;
+Thermique::Thermique() :Moteur(50) {
+    cout << "voiture Thermique prete" << endl;
+    this->cylindre = 10;
 }
+
 
 /**
  * \brief Constructeur avec parametres rentres en argument
@@ -33,8 +35,10 @@ Thermique::Thermique() {
  * \param nom nom de l'entreprise
  * \param ville ville de l'entreprise
  */
-Thermique::Thermique(float cylindre) {
+Thermique::Thermique(float cylindre) :Moteur(50) {
+    cout << "voiture Thermique prete" << endl;
     this->cylindre = cylindre;
+
 }
 
 
