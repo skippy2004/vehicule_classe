@@ -22,9 +22,9 @@ void Moto::setPoids(int poids) {
 }
 
 
-std::string Moto::getMoteur(){
-    return this->Moteur;
+Moteur* Moto::getMoteur(){
+    return this->moteur;
 }
 void Moto::setMoteur(Moteur *moteur) {
-    this->Moteur = Moteur *moteur;
+    this->moteur = moteur;
 }
