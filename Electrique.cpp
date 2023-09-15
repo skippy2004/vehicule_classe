@@ -14,7 +14,7 @@
 
 
 using namespace std;
-
+class Moteur;
 
 /**
  * \brief Constructeur par default

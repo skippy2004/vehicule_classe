@@ -6,12 +6,11 @@
  * \date   June 2023
  *********************************************************************/
 
-#ifndef MISSION_H
-#define MISSION_H
+#ifndef MOTEUR_H
+#define MOTEUR_H
 #include <iostream>
 #include <string>
-#include "Electrique.h"
-#include "Thermique.h"
+
 
 using namespace std;
 
