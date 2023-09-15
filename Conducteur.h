@@ -11,7 +11,7 @@ private:
     std::string Nom;
     std::string Prenom;
     int anneeNaissance;
-    //Moto mesMotos[10];
+    //Moto* mesMotos[10];
 
 
 protected:
@@ -36,11 +36,17 @@ public:
     int getanneeNaissance();
     void setanneeNaissance(int anneeNaissance);
 
-    void afficheMotos();
+    //void afficheMotos();
 
-    //void addMoto(Moto* newMoto);
 
-    //void rmMotto(Moto* rmMoto);
+    /*
+    addMoto* getnewMoto();
+    void setnewMoto(addMoto *newMoto);
+
+
+    rmMotto* getrmMotto();
+    void setrmMotto(Moto* rmMotto);
+    */
 
 };
 
