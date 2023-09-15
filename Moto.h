@@ -2,7 +2,7 @@
 #define MOTO_H
 #include <iostream>
 #include <string>
-class Moteur
+class Moteur;
 
 class Moto
 {
@@ -20,6 +20,6 @@ public:
     void setPoids(int poids);
     int getPoids();
 
-    void setMoteur(std::string Moteur);
+    void setMoteur(Moteur *moteur);
     std::string getMoteur();
 };
