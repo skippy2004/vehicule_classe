@@ -31,31 +31,30 @@ conducteur::conducteur(std::string Nom, std::string Prenom, int anneeNaissance) 
 //Destructeur de Conducteur
 conducteur::~conducteur() {
 
-    cout << "Destrcution de l'conducteur " << this->Nom << " " << this->Prenom << endl;
+    cout << "Destrcution de l'conducteur " << this->Nom << " " << this->Prenom << "" << this->anneeNaissance << endl;
 
 }
-
-
+//------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------
 
-/*
-std::string conducteur::getNom()
-{
+std::string conducteur::getNom() {
     return this->Nom;
 }
-void conducteur::setconducteur(std::string nouveauNom) {
-    this->Nom = nouveauNom;
+void conducteur::setNom(std::string Nom) {
+    this->Nom = Nom;
+}
+
+std::string conducteur::getPrenom() {
+    return this->Prenom;
+}
+void conducteur::setPrenom(std::string Prenom) {
+    this->Prenom = Prenom;
 }
 
 
-
-std::string conducteur::getPrenomconducteur() {
-    return this->Prenomconducteur;
+int conducteur::getanneeNaissance() {
+    return this->anneeNaissance = anneeNaissance;
 }
-
-
-
-void  conducteur::setPrenomconducteur(std::string nouvellePrenom) {
-    this->Prenomconducteur = nouvellePrenom;
+void  conducteur::setanneeNaissance(int anneeNaissance) {
+    this->anneeNaissance = anneeNaissance;
 }
-*/

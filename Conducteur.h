@@ -21,18 +21,20 @@ protected:
 public:
     conducteur();
     ~conducteur();
-
-
     conducteur(std::string Nom, std::string Prenom, int anneeNaissance);
   
+
     std::string getNom();
     void setNom(std::string Nom);
     
     std::string getPrenom();
     void setPrenom(std::string Prenom);
 
-    int getAnneeNaissance();
-    void setAnneeNaissance(int AnneeNaissance);
+
+
+
+    int getanneeNaissance();
+    void setanneeNaissance(int anneeNaissance);
 
     void afficheMotos();
 
