@@ -16,7 +16,7 @@ private:
     //variable de l'anne de naissance
     int anneeNaissance;
     //permetra plus tard d'avoir plusieurs moto//fonction pour ajouter des moto
-    Moto *mesMotos;
+    Moto* mesMotos[10]{NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL};
 
 
 protected:

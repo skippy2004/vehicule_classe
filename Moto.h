@@ -13,6 +13,7 @@ class Moto
 private:
 
     int poids; //définition du poids de la moto
+    string nom;//définition du nom de la moto
     Moteur moteur; // definittion du moteur
 
 protected:
@@ -26,5 +27,10 @@ public:
     //moteur
     void setMoteur(Moteur moteur);
     Moteur getMoteur();
+
+
+
+    void setnom(string nom);
+    string getnom();
 };
 #endif

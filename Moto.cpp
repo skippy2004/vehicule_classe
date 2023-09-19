@@ -29,3 +29,12 @@ Moteur Moto::getMoteur(){
 void Moto::setMoteur(Moteur moteur) {
     this->moteur = moteur;
 }
+
+void Moto::setnom(string nom) {
+    this->nom = nom;
+}
+
+
+string Moto::getnom() {
+    this->nom;
+}

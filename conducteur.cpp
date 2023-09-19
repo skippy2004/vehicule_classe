@@ -74,18 +74,35 @@ void  conducteur::setanneeNaissance(int anneeNaissance) {
 
 //Permet d'afficher les motos que le conducteur a
 Moto* conducteur::afficheMotos() {
-    //for (int i = 0; i < 10; i++) { cout << *mesMotos[i] << endl; };
-    return this-> mesMotos;
+    for (int i = 0; i < 10; i++) { 
+        cout << mesMotos[i] << endl; 
+    };
+    return *mesMotos->getnom() ;
 };
 
 
 //Ajouter une moto au garage du conducteur
 void conducteur::setaddMoto(Moto* newMoto) {
-    
-    this-> mesMotos = newMoto;
+    for (int i = 0; i < 10; i++) {
+        if (mesMotos[i] == NULL) {
+            i = 11;
+            mesMotos[i] = newMoto;
+            return;
+        }
+    };
+    cout << "plus de place dans le garrage pour une 11° moto" << endl;
+    return;
 };
 
 //Pour retirer une moto du garage car rodeo sauvage
 void conducteur::setrmMoto(Moto *rmMotto) {
-    this-> mesMotos = NULL;
+    for (int i = 0; i < 10; i++) {
+        if (mesMotos[i] == rmMotto) {
+            i = 11;
+            mesMotos[i] = NULL;
+            return;
+        }
+    }
+    cout << "pas de moto de ce type dans le garrage" << endl;
+    return;
 };
