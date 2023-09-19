@@ -2,7 +2,8 @@
 #define conducteur_H
 #include <iostream>
 #include <string>
-
+#include "Moto.h"
+class Moto;
 
 class conducteur
 {
@@ -11,7 +12,7 @@ private:
     std::string Nom;
     std::string Prenom;
     int anneeNaissance;
-    //Moto* mesMotos[10];
+    Moto *mesMotos;
 
 
 protected:
@@ -36,16 +37,14 @@ public:
     int getanneeNaissance();
     void setanneeNaissance(int anneeNaissance);
 
-    void afficheMotos();
+    Moto* afficheMotos();
 
 
-    
-    addMoto* getnewMoto();
-    void setnewMoto(addMoto *newMoto);
+   
+    void setaddMoto(Moto *newMoto);
 
 
-    rmMotto* getrmMotto();
-    void setrmMotto(Moto* rmMotto);
+    void setrmMoto(Moto *rmMotto);
     
 
 };

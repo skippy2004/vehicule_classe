@@ -22,10 +22,10 @@ void Moto::setPoids(int poids) {
 }
 
 // get moteur, avec pointeur
-Moteur* Moto::getMoteur(){
+Moteur Moto::getMoteur(){
     return this->moteur;
 }
 //set moteur, recuperation du moteur dans la class moteur
-void Moto::setMoteur(Moteur *moteur) {
+void Moto::setMoteur(Moteur moteur) {
     this->moteur = moteur;
 }

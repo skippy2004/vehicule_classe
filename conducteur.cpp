@@ -54,7 +54,7 @@ void conducteur::setPrenom(std::string Prenom) {
 
 
 int conducteur::getanneeNaissance() {
-    return this->anneeNaissance = anneeNaissance;
+    return this->anneeNaissance;
 }
 void  conducteur::setanneeNaissance(int anneeNaissance) {
     this->anneeNaissance = anneeNaissance;
@@ -65,3 +65,20 @@ void  conducteur::setanneeNaissance(int anneeNaissance) {
 //------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------
 
+Moto* conducteur::afficheMotos() {
+    //for (int i = 0; i < 10; i++) { cout << *mesMotos[i] << endl; };
+    return this-> mesMotos;
+};
+
+
+
+
+void conducteur::setaddMoto(Moto* newMoto) {
+    
+    this-> mesMotos = newMoto;
+};
+
+
+void conducteur::setrmMoto(Moto *rmMotto) {
+    this-> mesMotos = NULL;
+};
