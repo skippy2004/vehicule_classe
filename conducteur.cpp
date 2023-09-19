@@ -37,25 +37,31 @@ conducteur::~conducteur() {
 //------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------
 
-
+//Pour récuperer le nom du conducteur
 std::string conducteur::getNom() {
     return this->Nom;
 }
+//Pour paramétrer le nom du conducteur
 void conducteur::setNom(std::string Nom) {
     this->Nom = Nom;
 }
 
+//Pour récuperer le Prenom du conducteur
 std::string conducteur::getPrenom() {
     return this->Prenom;
 }
+
+//Pour paramétrer le Prenom du conducteur
 void conducteur::setPrenom(std::string Prenom) {
     this->Prenom = Prenom;
 }
 
-
+//Pour récuperer la date de naissance du conducteur
 int conducteur::getanneeNaissance() {
     return this->anneeNaissance;
 }
+
+//Pour paramétrer la date de naissance du conducteur
 void  conducteur::setanneeNaissance(int anneeNaissance) {
     this->anneeNaissance = anneeNaissance;
 }
@@ -65,20 +71,21 @@ void  conducteur::setanneeNaissance(int anneeNaissance) {
 //------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------
 
+
+//Permet d'afficher les motos que le conducteur a
 Moto* conducteur::afficheMotos() {
     //for (int i = 0; i < 10; i++) { cout << *mesMotos[i] << endl; };
     return this-> mesMotos;
 };
 
 
-
-
+//Ajouter une moto au garage du conducteur
 void conducteur::setaddMoto(Moto* newMoto) {
     
     this-> mesMotos = newMoto;
 };
 
-
+//Pour retirer une moto du garage car rodeo sauvage
 void conducteur::setrmMoto(Moto *rmMotto) {
     this-> mesMotos = NULL;
 };
