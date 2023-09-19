@@ -1,0 +1,66 @@
+\doxysection{Conducteur.\+h}
+\hypertarget{_conducteur_8h_source}{}\label{_conducteur_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ conducteur\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ conducteur\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Moto.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_moto}{Moto}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classconducteur}{conducteur}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//variable\ du\ nom}}
+\DoxyCodeLine{00013\ \ \ \ \ std::string\ Nom;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//varible\ du\ prenom}}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ Prenom;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//variable\ de\ l'anne\ de\ naissance}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ anneeNaissance;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//permetra\ plus\ tard\ d'avoir\ plusieurs\ moto//fonction\ pour\ ajouter\ des\ moto}}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_moto}{Moto}}\ *mesMotos;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//constructeur\ de\ conducteur\ par\ défaut}}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classconducteur}{conducteur}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//destructeur\ de\ conducteur}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classconducteur}{\string~conducteur}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//constructeur\ de\ conducteur\ sur\ mesure}}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classconducteur}{conducteur}}(std::string\ Nom,\ std::string\ Prenom,\ \textcolor{keywordtype}{int}\ anneeNaissance);}
+\DoxyCodeLine{00033\ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//fonction\ pour\ le\ nom\ du\ conducteur\ }}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ getNom();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ setNom(std::string\ Nom);}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//fonction\ pour\ le\ prenom\ du\ conducteur\ }}
+\DoxyCodeLine{00039\ \ \ \ \ std::string\ getPrenom();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setPrenom(std::string\ Prenom);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//variable\ de\ get\ annee\ de\ naissance}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ getanneeNaissance();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ setanneeNaissance(\textcolor{keywordtype}{int}\ anneeNaissance);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//fonction\ pour\ permetrre\ de\ voir\ le\ garage\ du\ conducteur}}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_moto}{Moto}}*\ afficheMotos();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \textcolor{comment}{//fonction\ pour\ ajouter\ des\ moto}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ setaddMoto(\mbox{\hyperlink{class_moto}{Moto}}\ *newMoto);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//fonction\ pour\ remove\ des\ moto}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ setrmMoto(\mbox{\hyperlink{class_moto}{Moto}}\ *rmMotto);}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
