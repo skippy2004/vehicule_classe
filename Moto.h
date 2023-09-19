@@ -10,17 +10,16 @@ class Moto
 {
 private:
 
-    int poids;
-    Moteur *moteur;
+    int poids; //définition du poids de la moto
+    Moteur *moteur; // definittion du moteur avec pointeur
 
 protected:
 
 public:
-    Moto();
-    ~Moto();
+    // poids
     void setPoids(int poids);
     int getPoids();
-
+    //moteur
     void setMoteur(Moteur *moteur);
     Moteur* getMoteur();
 };
